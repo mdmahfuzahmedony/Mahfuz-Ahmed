@@ -1,84 +1,208 @@
-import React from "react";
+
 
 const Footer = () => {
   return (
-    // Background color moved to main footer to cover full width
-    // Added text-gray-300 for better readability on dark bg
-    <footer className="w-full bg-gray-900 text-gray-300 py-10">
-      <div className="max-w-[1600px] mx-auto px-4">
-        <div className="flex flex-col items-center gap-6">
-          {/* Name Section: Made it Bold, White and Larger */}
-          <h1 className="text-3xl font-bold text-white tracking-wide uppercase">
-            Mahfuz Ahmed Ony
-          </h1>
-
-          {/* Navigation Links: Added spacing and hover color effect */}
-          <nav className="mx-auto">
-            <div className="flex flex-wrap justify-center gap-6 font-medium text-sm sm:text-base">
-              <a className="link link-hover hover:text-white transition-colors duration-300 cursor-pointer">
-                About us
-              </a>
-              <a className="link link-hover hover:text-white transition-colors duration-300 cursor-pointer">
-                Contact
-              </a>
-              <a className="link link-hover hover:text-white transition-colors duration-300 cursor-pointer">
-                Jobs
-              </a>
-              <a className="link link-hover hover:text-white transition-colors duration-300 cursor-pointer">
-                Press kit
-              </a>
+    <footer className="bg-[#0a0a0a] text-white pt-16 pb-8 font-sans">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        {/* Top Section: 3 Columns Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20 mb-16">
+          {/* Column 1: Brand & Newsletter */}
+          <div className="flex flex-col gap-6">
+            {/* Logo */}
+            <div className="flex items-center gap-2">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="25"
+                  cy="25"
+                  r="20"
+                  stroke="#FF4D4D"
+                  strokeWidth="8"
+                />
+                <path
+                  d="M25 15C30 15 35 25 25 35"
+                  stroke="#FF4D4D"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                />
+              </svg>
+              <span className="text-3xl font-bold tracking-wide">Reeni</span>
             </div>
-          </nav>
 
-          {/* Social Icons: Added Hover effect and cursor pointer */}
-          <nav>
-            <div className="flex justify-center items-center gap-8">
-              <a className="hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer">
-                {/* Twitter / X */}
+            {/* Headline */}
+            <h2 className="text-5xl font-bold leading-tight mt-4">
+              Get Ready <span className="font-light text-gray-300">To</span>{" "}
+              <br />
+              <span className="font-light text-gray-300">Create Great</span>
+            </h2>
+
+            {/* Email Input */}
+            <div className="mt-8 relative max-w-sm">
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="w-full bg-transparent border-b border-gray-700 py-3 text-gray-300 focus:outline-none focus:border-[#FF4D4D] transition-colors"
+              />
+              <button className="absolute right-0 top-3 text-gray-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
-                  className="fill-current"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-              </a>
-              <a className="hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer">
-                {/* YouTube */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
-              </a>
-              <a className="hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer">
-                {/* Facebook */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                </svg>
-              </a>
+              </button>
             </div>
-          </nav>
+          </div>
 
-          {/* Copyright: Made text slightly dimmer (gray-500) */}
-          <aside className="text-center mt-4 border-t border-gray-700 pt-4 w-full">
-            <p className="text-gray-500 text-sm">
-              Copyright © {new Date().getFullYear()} - All rights reserved by{" "}
-              <span className="font-semibold text-gray-300">Mahfuz Ahmed</span>
-            </p>
-          </aside>
+          {/* Column 2: Quick Links */}
+          <div className="lg:pl-20 pt-4">
+            <h3 className="text-xl font-bold mb-8">Quick Link</h3>
+            <ul className="flex flex-col gap-5 text-gray-400">
+              <li>
+                <a href="#" className="hover:text-[#FF4D4D] transition-colors">
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#FF4D4D] transition-colors">
+                  Service
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#FF4D4D] transition-colors">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#FF4D4D] transition-colors">
+                  Blog Post
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#FF4D4D] transition-colors">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Contact Info */}
+          <div className="pt-4">
+            <h3 className="text-xl font-bold mb-8">Contact</h3>
+            <div className="flex flex-col gap-6 text-gray-400">
+              {/* Email */}
+              <div className="flex items-center gap-4">
+                <div className="bg-gray-900 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <span>nafiz125@gmail.com</span>
+              </div>
+
+              {/* Address */}
+              <div className="flex items-center gap-4">
+                <div className="bg-gray-900 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <span>3891 Ranchview Dr. Richardson</span>
+              </div>
+
+              {/* Phone */}
+              <div className="flex items-center gap-4">
+                <div className="bg-gray-900 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <span>01245789321</span>
+              </div>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-4 mt-8">
+              {["instagram", "linkedin", "twitter", "facebook"].map(
+                (social, index) => (
+                  <a
+                    key={index}
+                    href="#"
+                    className="bg-gray-900 p-3 rounded-full hover:bg-[#FF4D4D] hover:text-white transition-all text-gray-400"
+                  >
+                    {/* Simple placeholder icon for social media logic */}
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.492 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                    </svg>
+                  </a>
+                )
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-gray-800 my-8"></div>
+
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4">
+          <p>© InversWeb {new Date().getFullYear()} | All Rights Reserved</p>
+          <div className="flex gap-8">
+            <a href="#" className="hover:text-white transition-colors">
+              Trams & Condition
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Contact Us
+            </a>
+          </div>
         </div>
       </div>
     </footer>
