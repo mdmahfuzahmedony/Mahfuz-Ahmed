@@ -2,30 +2,30 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[#0a0a0a] min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
+    <section className="relative  bg-[#0a0a0a] min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
       {/* ================= BACKGROUND TEXT EFFECT ================= */}
       {/* এই লেখাটি ছবির পেছনে থাকবে (WEB DESIGN) */}
-      <div className="absolute bottom-0 w-full text-center z-0 select-none pointer-events-none opacity-30 lg:opacity-100">
+      <div className="absolute bottom-0 max-w-[1500px] mx-auto text-center z-0 select-none pointer-events-none opacity-30 lg:opacity-100">
         <div className="relative flex flex-col items-center justify-center leading-none">
           {/* Top Text (Gray Outline) */}
           <h1
             className="text-[6rem] md:text-[10rem] lg:text-[13rem] font-bold text-transparent font-sans"
             style={{ WebkitTextStroke: "2px #333" }}
           >
-            WEB
+            WEB DEVELOPMENT
           </h1>
           {/* Bottom Text (Red Outline) */}
           <h1
             className="text-[6rem] md:text-[10rem] lg:text-[13rem] font-bold text-transparent font-sans -mt-4 md:-mt-10"
             style={{ WebkitTextStroke: "2px #FF4D4D" }}
           >
-            WEB DESIGN
+            WEB 
           </h1>
         </div>
       </div>
 
       {/* ================= MAIN CONTENT GRID ================= */}
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 w-full relative z-10">
+      <div className="max-w-[1500px] mx-auto border-white w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center h-full">
           {/* ----- LEFT COLUMN: HEADING ----- */}
           <div className="order-2 lg:order-1 flex flex-col gap-6 text-center lg:text-left mt-10 lg:mt-0">

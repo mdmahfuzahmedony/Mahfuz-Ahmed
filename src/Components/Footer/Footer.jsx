@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <footer className="bg-[#0a0a0a] text-white pt-16 pb-8 font-sans">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <div className="max-w-[1500px] mx-auto">
         {/* Top Section: 3 Columns Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20 mb-16">
           {/* Column 1: Brand & Newsletter */}

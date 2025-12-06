@@ -38,8 +38,8 @@ const Service = () => {
   ];
 
   return (
-    <section className="bg-[#0a0a0a] py-20 px-6 lg:px-12 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="service" className="bg-[#0a0a0a] py-20 px-6 lg:px-12 overflow-hidden">
+      <div className="max-w-[1500px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           {/* ============ LEFT SIDE: TEXT CONTENT ============ */}

@@ -14,8 +14,8 @@ const About = () => {
   ];
 
   return (
-    <section className="bg-[#0a0a0a] py-20 px-6 lg:px-12 overflow-hidden" id="about">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="about" className="bg-[#0a0a0a] py-20 px-6 lg:px-12 overflow-hidden">
+      <div className="max-w-[1500px] mx-auto">
         
         {/* ============ TOP SECTION: TEXT LEFT - IMAGE RIGHT ============ */}
         <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
@@ -104,7 +104,7 @@ const About = () => {
 
       </div>
 
-      {/* ============ CUSTOM STYLE FOR ANIMATION ============ */}
+      ============ CUSTOM STYLE FOR ANIMATION ============
       <style jsx>{`
         @keyframes marquee {
           0% { transform: translateX(0); }

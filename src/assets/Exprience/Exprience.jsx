@@ -91,7 +91,7 @@ const Experience = () => {
 
   return (
     <section className="bg-[#0a0a0a] py-20 px-6 lg:px-12">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1500px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* ============ LEFT SIDE: TEXT ============ */}
           <div className="w-full lg:w-1/3 flex flex-col gap-6 text-center lg:text-left">
