@@ -91,11 +91,7 @@ const Footer = () => {
                   Blog Post
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-[#FF4D4D] transition-colors">
-                  Pricing
-                </a>
-              </li>
+            
             </ul>
           </div>
 
@@ -121,7 +117,7 @@ const Footer = () => {
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
-                <span>nafiz125@gmail.com</span>
+                <span>mdmahfuzahmedony@gmail.com</span>
               </div>
 
               {/* Address */}
@@ -142,7 +138,7 @@ const Footer = () => {
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
-                <span>3891 Ranchview Dr. Richardson</span>
+                <span>Jessore,Sadar,Bangladesh</span>
               </div>
 
               {/* Phone */}
@@ -162,7 +158,7 @@ const Footer = () => {
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
                 </div>
-                <span>01245789321</span>
+                <span>01309834483</span>
               </div>
             </div>
 
@@ -191,7 +187,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4">
-          <p>© InversWeb {new Date().getFullYear()} | All Rights Reserved</p>
+          <p>© Mahfuz Ahmed {new Date().getFullYear()} | All Rights Reserved</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">
               Trams & Condition

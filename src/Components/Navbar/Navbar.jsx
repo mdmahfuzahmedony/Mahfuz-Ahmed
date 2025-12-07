@@ -15,8 +15,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#0a0a0a]  text-white border-b  sticky top-0 z-50">
-      <div className="max-w-[1500px] border mx-auto ">
+    <nav className="bg-[#0a0a0a]  text-white   sticky top-0 z-50">
+      <div className="max-w-[1500px] mx-auto ">
         <div className="flex justify-between items-center h-24">
           {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
